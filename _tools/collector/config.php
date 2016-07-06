@@ -34,6 +34,7 @@ $config["css"] = array(
     "/_blocks/base/base_begin.css",
         // base styles for desktop
         "/_blocks/base/desktop/base_desktop_begin.css",
+            "/_blocks/base/desktop/body/body.css",
         "/_blocks/base/desktop/base_desktop_end.css",
     "/_blocks/base/base_end.css",
     
@@ -41,6 +42,8 @@ $config["css"] = array(
     "/_blocks/project/project_begin.css",
         // project template styles for desktop
         "/_blocks/project/desktop/project-template_desktop_begin.css",
+            "/_blocks/project/desktop/html/html.css",
+            "/_blocks/project/desktop/body/body.css",
             "/_blocks/project/desktop/page/page.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",

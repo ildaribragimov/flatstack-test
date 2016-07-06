@@ -5,6 +5,10 @@
 		<meta charset="utf-8">
         <title>Front-end Developer Test Task</title>
         <link rel="icon" href="/img/system/favicon.ico" type="image/x-icon">
+        <?php
+            // Сборка и подключение базовых CSS-стилей
+            include_once "css/system/styles.php";
+        ?>
     </head>
     <body></body>
 </html>

@@ -1,0 +1,5 @@
+.block__wrapper {
+    display: inline-block !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}

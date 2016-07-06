@@ -30,6 +30,16 @@ $config["css"] = array(
         "/_blocks/reset/footer/footer.css",
     "/_blocks/reset/reset_end.css",
 
+    // global styles
+    "/_blocks/global/global_begin.css",
+        // base styles for desktop
+        "/_blocks/global/desktop/global_desktop_begin.css",
+            //"/_blocks/global/desktop/block/block.css",
+                "/_blocks/global/desktop/block/__wrapper/block__wrapper.css",
+                "/_blocks/global/desktop/block/_align/block_align.css",
+        "/_blocks/global/desktop/global_desktop_end.css",
+    "/_blocks/global/global_end.css",
+
     // base styles
     "/_blocks/base/base_begin.css",
         // base styles for desktop

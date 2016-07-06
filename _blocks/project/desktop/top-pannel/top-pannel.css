@@ -1,0 +1,13 @@
+.top-pannel {
+    background-color: #ffffff;
+}
+.top-pannel::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: inherit;
+    height: 1px;
+    opacity: 0.3;
+    background-image: linear-gradient(to left, #7e00e8, #ff1876 54%, #bb0cb2);
+}

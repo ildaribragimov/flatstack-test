@@ -10,5 +10,10 @@
             include_once "css/system/styles.php";
         ?>
     </head>
-    <body class="page"></body>
+    <body class="page">
+        <?php
+            // Вставка верхней пенели навигации
+            include "includes/topPannel.php";
+        ?>
+    </body>
 </html>

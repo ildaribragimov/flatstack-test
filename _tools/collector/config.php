@@ -50,6 +50,9 @@ $config["css"] = array(
                 "/_blocks/base/desktop/link/_block/link_block.css",
             "/_blocks/base/desktop/icon/icon.css",
                 "/_blocks/base/desktop/icon/_size/icon_size.css",
+            "/_blocks/base/desktop/top-pannel/top-pannel.css",
+                "/_blocks/base/desktop/top-pannel/__wrapper/top-pannel__wrapper.css",
+                "/_blocks/base/desktop/top-pannel/__logo/top-pannel__logo.css",
         "/_blocks/base/desktop/base_desktop_end.css",
     "/_blocks/base/base_end.css",
     
@@ -63,6 +66,9 @@ $config["css"] = array(
             "/_blocks/project/desktop/page/page.css",
             "/_blocks/project/desktop/icon/icon.css",
                 "/_blocks/project/desktop/icon/_set/icon_set.css",
+            "/_blocks/project/desktop/top-pannel/top-pannel.css",
+                "/_blocks/project/desktop/top-pannel/__wrapper/top-pannel__wrapper.css",
+                "/_blocks/project/desktop/top-pannel/__logo/top-pannel__logo.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );

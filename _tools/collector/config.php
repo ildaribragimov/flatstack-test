@@ -69,6 +69,9 @@ $config["css"] = array(
             "/_blocks/project/desktop/top-pannel/top-pannel.css",
                 "/_blocks/project/desktop/top-pannel/__wrapper/top-pannel__wrapper.css",
                 "/_blocks/project/desktop/top-pannel/__logo/top-pannel__logo.css",
+            "/_blocks/project/desktop/logo/logo.css",
+                "/_blocks/project/desktop/logo/__mark/logo__mark.css",
+                "/_blocks/project/desktop/logo/__name/logo__name.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );

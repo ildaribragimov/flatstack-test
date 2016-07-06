@@ -1,0 +1,9 @@
+.logo__mark {
+    margin: 0 0.2777em;
+    background-image: linear-gradient(to left, #7e00e8, #ff1876 54%, #bb0cb2);
+}
+.logo__mark::before {
+    color: #000;
+    background: #fff;
+    mix-blend-mode: lighten;
+}

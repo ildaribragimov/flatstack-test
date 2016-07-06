@@ -1,0 +1,7 @@
+.icon_size_x64 {
+    width: 4em;
+    height: 4em;
+}
+.icon_size_x64::before {
+	font-size: 4em;
+}

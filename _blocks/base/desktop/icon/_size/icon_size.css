@@ -1,0 +1,49 @@
+.icon_size_x16 {
+    width: 1em;
+    height: 1em;    
+}
+.icon_size_x16::before {
+    font-size: 1em;
+}
+.icon_size_x24 {
+    width: 1.5em;
+    height: 1.5em;
+}
+.icon_size_x24::before {
+    font-size: 1.5em;
+}
+.icon_size_x32 {
+    width: 2em;
+    height: 2em;
+}
+.icon_size_x32::before {
+    font-size: 2em;
+}
+.icon_size_x48 {
+    width: 3em;
+    height: 3em;
+}
+.icon_size_x48::before {
+	font-size: 3em;
+}
+.icon_size_x64 {
+    width: 4em;
+    height: 4em;
+}
+.icon_size_x64::before {
+	font-size: 4em;
+}
+.icon_size_x128 {
+    width: 8em;
+    height: 8em;
+}
+.icon_size_x128::before {
+	font-size: 8em;
+}
+.icon_size_x256 {
+    width: 16em;
+    height: 16em;
+}
+.icon_size_x256::before {
+	font-size: 16em;
+}

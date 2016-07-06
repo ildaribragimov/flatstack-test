@@ -1,0 +1,50 @@
+.icon_app:before {
+    content: "\e900";
+}
+.icon_cart:before {
+    content: "\e901";
+}
+.icon_get-geo:before {
+    content: "\e902";
+}
+.icon_secure .path1:before {
+    content: "\e903";
+    color: rgb(107, 107, 107);
+}
+.icon_secure .path2:before {
+    content: "\e904";
+    margin-left: -0.73046875em;
+    color: rgb(126, 211, 33);
+}
+.icon_secure .path3:before {
+    content: "\e905";
+    margin-left: -0.73046875em;
+    color: rgb(255, 255, 255);
+}
+.icon_visa .path1:before {
+    content: "\e906";
+    color: rgb(0, 87, 159);
+}
+.icon_visa .path2:before {
+    content: "\e907";
+    margin-left: -3.2666015625em;
+    color: rgb(0, 87, 159);
+}
+.icon_visa .path3:before {
+    content: "\e908";
+    margin-left: -3.2666015625em;
+    color: rgb(0, 87, 159);
+}
+.icon_visa .path4:before {
+    content: "\e909";
+    margin-left: -3.2666015625em;
+    color: rgb(0, 87, 159);
+}
+.icon_visa .path5:before {
+    content: "\e90a";
+    margin-left: -3.2666015625em;
+    color: rgb(250, 165, 25);
+}
+.icon_search:before {
+    content: "\e036";
+}

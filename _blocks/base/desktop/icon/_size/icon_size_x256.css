@@ -1,0 +1,7 @@
+.icon_size_x256 {
+    width: 16em;
+    height: 16em;
+}
+.icon_size_x256::before {
+	font-size: 16em;
+}

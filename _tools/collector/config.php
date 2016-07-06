@@ -38,6 +38,8 @@ $config["css"] = array(
             "/_blocks/base/desktop/link/link.css",
                 "/_blocks/base/desktop/link/_inverted/link_inverted.css",
                 "/_blocks/base/desktop/link/_block/link_block.css",
+            "/_blocks/base/desktop/icon/icon.css",
+                "/_blocks/base/desktop/icon/_size/icon_size.css",
         "/_blocks/base/desktop/base_desktop_end.css",
     "/_blocks/base/base_end.css",
     
@@ -49,6 +51,8 @@ $config["css"] = array(
             "/_blocks/project/desktop/html/html.css",
             "/_blocks/project/desktop/body/body.css",
             "/_blocks/project/desktop/page/page.css",
+            "/_blocks/project/desktop/icon/icon.css",
+                "/_blocks/project/desktop/icon/_set/icon_set.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );

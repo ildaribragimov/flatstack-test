@@ -1,0 +1,7 @@
+.icon_size_x32 {
+    width: 2em;
+    height: 2em;
+}
+.icon_size_x32::before {
+    font-size: 2em;
+}

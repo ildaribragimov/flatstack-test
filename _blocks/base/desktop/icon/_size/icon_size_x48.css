@@ -1,0 +1,7 @@
+.icon_size_x48 {
+    width: 3em;
+    height: 3em;
+}
+.icon_size_x48::before {
+	font-size: 3em;
+}

@@ -95,3 +95,15 @@
   src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+/** icon font **/
+@font-face {
+    font-family: 'icomoon';
+    src: url('/fonts/icomoon/icomoon.eot?xn50to');
+    src: url('/fonts/icomoon/icomoon.eot?xn50to#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon/icomoon.ttf?xn50to') format('truetype'),
+        url('/fonts/icomoon/icomoon.woff?xn50to') format('woff'),
+        url('/fonts/icomoon/icomoon.svg?xn50to#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

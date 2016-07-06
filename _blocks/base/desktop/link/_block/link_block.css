@@ -1,0 +1,8 @@
+.link_block {
+	display: block;
+	position: relative;
+}
+.link_block,
+.link_block:hover {
+    text-decoration: none;
+}

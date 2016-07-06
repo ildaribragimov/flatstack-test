@@ -41,6 +41,7 @@ $config["css"] = array(
     "/_blocks/project/project_begin.css",
         // project template styles for desktop
         "/_blocks/project/desktop/project-template_desktop_begin.css",
+            "/_blocks/project/desktop/page/page.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );

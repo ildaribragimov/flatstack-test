@@ -10,5 +10,5 @@
             include_once "css/system/styles.php";
         ?>
     </head>
-    <body></body>
+    <body class="page"></body>
 </html>

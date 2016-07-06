@@ -1,0 +1,10 @@
+.block_align_middle {
+    height: 100%;
+    white-space: nowrap;
+}
+.block_align_middle::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: inherit;
+}

@@ -35,6 +35,9 @@ $config["css"] = array(
         // base styles for desktop
         "/_blocks/base/desktop/base_desktop_begin.css",
             "/_blocks/base/desktop/body/body.css",
+            "/_blocks/base/desktop/link/link.css",
+                "/_blocks/base/desktop/link/_inverted/link_inverted.css",
+                "/_blocks/base/desktop/link/_block/link_block.css",
         "/_blocks/base/desktop/base_desktop_end.css",
     "/_blocks/base/base_end.css",
     

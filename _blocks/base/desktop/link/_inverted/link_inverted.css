@@ -1,0 +1,6 @@
+.link_inverted {
+    text-decoration: none;
+}
+.link_inverted:hover {
+	text-decoration: underline;
+}

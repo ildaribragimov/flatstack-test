@@ -1,5 +1,8 @@
 .page__content {
+    max-width: 58.75em;
+    width: calc(100% - 0.625em * 2);
     height: 38em;
+    margin: 3.75em 0.625em 0.625em;
     border-radius: 0.3125em;
     background: #ffffff linear-gradient(to bottom, #ffffff, #fefefe);
     box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);

@@ -88,4 +88,6 @@ $config["css"] = array(
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );
+// Порядок загрузки JS-скриптов библиотеки
+$config["js"] = array();
 ?>

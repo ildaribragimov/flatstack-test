@@ -15,5 +15,9 @@
             // Вставка верхней пенели навигации
             include "includes/topPannel.php";
         ?>
+        <?php
+            // Сборка и подключение базовых js-скриптов
+            include_once "js/scripts.php";
+        ?>
     </body>
 </html>

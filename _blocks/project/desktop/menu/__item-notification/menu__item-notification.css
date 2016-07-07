@@ -1,0 +1,15 @@
+.menu__item-notification {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    background-color: #ff1876;
+    border: solid 1px #ffffff;
+    font-size: 0.625em;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-align: center;
+    color: #ffffff;
+}

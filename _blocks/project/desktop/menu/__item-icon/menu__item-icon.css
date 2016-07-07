@@ -1,0 +1,10 @@
+.menu__item-icon {
+    position: relative;
+    margin: 0 0.2777em;
+    background-image: radial-gradient(circle at 100% 90%, #7e00e8, #ff1876 30%, #bb0cb2);
+}
+.menu__item-icon::before {
+    color: #000;
+    background: #fff;
+    mix-blend-mode: lighten;
+}

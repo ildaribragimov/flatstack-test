@@ -1,0 +1,4 @@
+.menu_horiz .menu__item {
+    display: inline-block;
+    white-space: nowrap;
+}

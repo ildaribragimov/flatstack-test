@@ -91,5 +91,7 @@ $config["css"] = array(
 // Порядок загрузки JS-скриптов библиотеки
 $config["js"] = array(
     "/js/helpers/ajax.js",
+    
+    "/_blocks/project/desktop/cart/cart.js"
 );
 ?>

@@ -1,5 +1,6 @@
 .top-pannel {
     background-color: #ffffff;
+    font-weight: 300;
 }
 .top-pannel::after {
     content: '';

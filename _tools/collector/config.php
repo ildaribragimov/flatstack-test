@@ -89,5 +89,7 @@ $config["css"] = array(
     "/_blocks/project/project_end.css",
 );
 // Порядок загрузки JS-скриптов библиотеки
-$config["js"] = array();
+$config["js"] = array(
+    "/js/helpers/ajax.js",
+);
 ?>

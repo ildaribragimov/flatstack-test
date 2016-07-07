@@ -11,6 +11,9 @@
         ?>
     </head>
     <body class="page">
+        <div class="page__wrapper block_align_middle">
+            <div class="page__content block__wrapper"></div>
+        </div>
         <?php
             // Вставка верхней пенели навигации
             include "includes/topPannel.php";

@@ -14,7 +14,7 @@
         <div class="page__wrapper">
             <div class="page__content">
                 <div class="order__placement clr">
-                    <div class="order__items"></div>
+                    <div class="order__invoice"></div>
                     <div class="order__form"></div>
                 </div>
             </div>

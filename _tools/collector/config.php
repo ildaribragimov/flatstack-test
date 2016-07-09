@@ -92,7 +92,7 @@ $config["css"] = array(
                 "/_blocks/project/desktop/menu/__item-notification/menu__item-notification.css",
             //"/_blocks/project/desktop/order/order.css",
                 "/_blocks/project/desktop/order/__placement/order__placement.css",
-                "/_blocks/project/desktop/order/__items/order__items.css",
+                "/_blocks/project/desktop/order/__invoice/order__invoice.css",
                 "/_blocks/project/desktop/order/__form/order__form.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",

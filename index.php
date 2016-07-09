@@ -12,7 +12,12 @@
     </head>
     <body class="page">
         <div class="page__wrapper">
-            <div class="page__content"></div>
+            <div class="page__content">
+                <div class="order__placement clr">
+                    <div class="order__items"></div>
+                    <div class="order__form"></div>
+                </div>
+            </div>
         </div>
         <?php
             // Вставка верхней пенели навигации

@@ -37,6 +37,7 @@ $config["css"] = array(
             //"/_blocks/global/desktop/block/block.css",
                 "/_blocks/global/desktop/block/__wrapper/block__wrapper.css",
                 "/_blocks/global/desktop/block/_align/block_align.css",
+            "/_blocks/global/desktop/clr/clr.css",
         "/_blocks/global/desktop/global_desktop_end.css",
     "/_blocks/global/global_end.css",
 
@@ -76,7 +77,7 @@ $config["css"] = array(
                 "/_blocks/project/desktop/icon/_set/icon_set.css",
             "/_blocks/project/desktop/page/page.css",
                 "/_blocks/project/desktop/page/__wrapper/page__wrapper.css",
-                "/_blocks/project/desktop/page/__content/page__content.css",
+                //"/_blocks/project/desktop/page/__content/page__content.css",
             "/_blocks/project/desktop/top-pannel/top-pannel.css",
                 "/_blocks/project/desktop/top-pannel/__wrapper/top-pannel__wrapper.css",
                 "/_blocks/project/desktop/top-pannel/__logo/top-pannel__logo.css",
@@ -89,6 +90,10 @@ $config["css"] = array(
                 "/_blocks/project/desktop/menu/__item-icon/menu__item-icon.css",
                 "/_blocks/project/desktop/menu/__item-title/menu__item-title.css",
                 "/_blocks/project/desktop/menu/__item-notification/menu__item-notification.css",
+            //"/_blocks/project/desktop/order/order.css",
+                "/_blocks/project/desktop/order/__placement/order__placement.css",
+                "/_blocks/project/desktop/order/__items/order__items.css",
+                "/_blocks/project/desktop/order/__form/order__form.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );

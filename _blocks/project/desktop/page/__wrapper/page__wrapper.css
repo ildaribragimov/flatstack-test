@@ -1,6 +1,6 @@
 .page__wrapper {
     max-width: 58.75em;
     width: auto;
-    padding: 0 0.625em;
-    margin: 6.25em auto 0;
+    padding: 6.25em 0.625em 3.125em;
+    margin: 0 auto;
 }

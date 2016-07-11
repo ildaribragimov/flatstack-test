@@ -96,6 +96,20 @@ $config["css"] = array(
                 "/_blocks/project/desktop/order/__placement/order__placement.css",
                 "/_blocks/project/desktop/order/__invoice/order__invoice.css",
                 "/_blocks/project/desktop/order/__form/order__form.css",
+                "/_blocks/project/desktop/order/__item/order__item.css",
+                "/_blocks/project/desktop/order/__item-photo/order__item-photo.css",
+                "/_blocks/project/desktop/order/__item-description/order__item-description.css",
+                "/_blocks/project/desktop/order/__item-name/order__item-name.css",
+                "/_blocks/project/desktop/order/__item-quantity/order__item-quantity.css",
+                "/_blocks/project/desktop/order/__item-extra-info/order__item-extra-info.css",
+                "/_blocks/project/desktop/order/__item-total-price/order__item-total-price.css",
+                "/_blocks/project/desktop/order/__total/order__total.css",
+                "/_blocks/project/desktop/order/__total-val/order__total-val.css",
+                "/_blocks/project/desktop/order/__total/_foot/order__total_foot.css",
+            "/_blocks/project/desktop/invoice/invoice.css",
+                "/_blocks/project/desktop/invoice/__header/invoice__header.css",
+                "/_blocks/project/desktop/invoice/__header/invoice__header.css",
+                "/_blocks/project/desktop/invoice/__control/_edit/invoice__control_edit.css",
         "/_blocks/project/desktop/project-template_desktop_end.css",
     "/_blocks/project/project_end.css",
 );
@@ -103,6 +117,7 @@ $config["css"] = array(
 $config["js"] = array(
     "/js/helpers/ajax.js",
     
-    "/_blocks/project/desktop/cart/cart.js"
+    "/_blocks/project/desktop/cart/cart.js",
+    "/_blocks/project/desktop/order/order.js"
 );
 ?>

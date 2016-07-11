@@ -1,0 +1,5 @@
+.order__item {
+    width: 100%;
+    padding: 0.8125em 0 0.75em;
+    border-bottom: solid 1px rgba(151,151,151,0.2);
+}

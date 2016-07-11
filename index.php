@@ -14,8 +14,12 @@
         <div class="page__wrapper">
             <div class="page__content">
                 <div class="order__placement clr">
-                    <div class="order__invoice"></div>
-                    <div class="order__form"></div>
+                    <?php
+                        // Вставка блока спецификации заказа
+                        include_once "includes/orderInvoice.php";
+                        // Вставка блока формы оформления заказа
+                        include_once "includes/orderForm.php";
+                    ?>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 .clr::after {
     content: '';
     clear: both !important;
+    display: block;
 }

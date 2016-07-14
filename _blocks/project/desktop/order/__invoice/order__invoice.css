@@ -2,7 +2,6 @@
     max-width: 25em;
     width: 100%;
     height: inherit;
-    background-color: rgba(230, 233, 240, 0.5);
     overflow-y: auto;
     float: right;
 }

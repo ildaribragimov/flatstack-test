@@ -1,6 +1,6 @@
 .order__placement {
-    height: 38em;
     border-radius: 0.3125em;
-    background: #ffffff linear-gradient(to bottom, #ffffff, #fefefe);
+    background-color: rgba(243, 244, 248, 1);
     box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
+    overflow: auto;
 }

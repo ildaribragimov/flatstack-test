@@ -1,0 +1,23 @@
+.stages__separator {
+    width: 1.6666em;
+    height: 1.6666em;
+}
+.stages__separator::before,
+.stages__separator::after {
+    content: '';
+    width: 1.1785em;
+    height: 1px;
+    background-color: #979797;
+    position: absolute;
+    top: 50%;
+    right: 0.4166em;
+}
+.stages__separator::before {
+    transform: rotate(-45deg);
+    transform-origin: 100% 100%;
+    margin-top: -1px;
+}
+.stages__separator::after {
+    transform: rotate(45deg);
+    transform-origin: 100% 0%;
+}

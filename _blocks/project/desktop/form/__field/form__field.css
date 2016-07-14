@@ -1,0 +1,10 @@
+.form__field {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #dedcdc;
+    padding: 0.625em 1em;
+    max-width: 26.625em;
+    width: calc(100% - 2em - 2px - 0.625em);
+    vertical-align: middle;
+    margin: 0.3125em;
+}

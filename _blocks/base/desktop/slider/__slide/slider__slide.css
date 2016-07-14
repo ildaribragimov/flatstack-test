@@ -1,0 +1,11 @@
+.slider__slide {
+    width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+}
+.slider_move-direction_vert .slider__slide {
+    display: block;
+}

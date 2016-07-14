@@ -1,0 +1,7 @@
+.slider__viewport {
+    position: relative;
+    z-index: 15;
+}
+.slider_full-screen .slider__viewport {
+    height: inherit;
+}

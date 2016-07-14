@@ -1,0 +1,13 @@
+.slider__control-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+.slider__control_disable .slider__control-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    z-index: 30;
+}

@@ -1,0 +1,6 @@
+.slider__control_stages-group::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}

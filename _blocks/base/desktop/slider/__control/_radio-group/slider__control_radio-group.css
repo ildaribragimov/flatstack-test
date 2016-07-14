@@ -1,0 +1,19 @@
+.slider__control_radio-group::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.slider_gallery .slider__control_radio-group {
+    position: absolute;
+}
+.slider_gallery.slider_move-direction_horiz .slider__control_radio-group {
+    bottom: 0;
+    width: 100%;
+}
+.slider_move-direction_vert .slider__control_radio-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}

@@ -1,0 +1,70 @@
+slider
+    |
+    |-- _full-screen
+    |
+    |-- _orientation
+    |       |
+    |       |-- _portrait
+    |       |-- _album
+    |
+    |-- _move-direction
+    |       |
+    |       |-- _horiz
+    |       |-- _vert
+    |
+    |-- _reviews
+    |
+    |-- _gallery
+    |       |
+    |       |-- _photo
+    |       |-- _video
+    |
+    |-- _products-list
+    |
+    |-- __wrapper
+    |
+    |-- __content
+            |
+            |-- __header
+            |       |
+            |       |-- __header-title
+            |       |
+            |       |-- __header-separator
+            |
+            |-- __viewport
+            |       |
+            |       |-- __slides
+            |               |
+            |               |-- __slide
+            |                       |
+            |                       |-- _prev
+            |                       |-- _current
+            |                       |-- _next
+            |                       |
+            |                       |-- _type
+            |                       |       |
+            |                       |       |-- _photo
+            |                       |       |-- _video
+            |                       |       |-- _review
+            |                       |       |-- _product
+            |                       |
+            |                       |-- __slide-header
+            |                       |
+            |                       |-- __slide-desc
+            |
+            |-- __control-group
+                    |
+                    |-- __control
+                            |
+                            |-- _arrow
+                            |       |
+                            |       |-- _prev
+                            |       |-- _next
+                            |        
+                            |-- _radio-group
+                            |
+                            |-- _stages-group
+                            |
+                            |-- __control-wrapper
+                                    |
+                                    |-- __control-radio

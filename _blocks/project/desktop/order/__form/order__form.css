@@ -1,4 +1,8 @@
 .order__form {
+    max-width: calc(100% - 25em);
+    min-width: 25em;
+    width: 100%;
     height: inherit;
     float: left;
+    background: #ffffff linear-gradient(to bottom, #ffffff, #fefefe);
 }

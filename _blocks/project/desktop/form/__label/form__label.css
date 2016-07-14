@@ -1,0 +1,8 @@
+.form__label {
+    display: inline-block;
+    font-size: 0.8125em;
+    color: #777879;
+    margin: 0 0.625em;
+    vertical-align: middle;
+    line-height: 1.1111em;
+}

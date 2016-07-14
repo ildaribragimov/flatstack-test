@@ -1,0 +1,4 @@
+.stages__stage {
+    display: inline-block;
+    white-space: nowrap;
+}

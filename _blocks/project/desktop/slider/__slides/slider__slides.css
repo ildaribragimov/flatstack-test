@@ -1,0 +1,7 @@
+.slider__slides {
+    -webkit-transition: all 0.4s cubic-bezier(0.77,0,0.18,1);
+    -moz-transition: all 0.4s cubic-bezier(0.77,0,0.18,1);
+    -ms-transition: all 0.4s cubic-bezier(0.77,0,0.18,1);
+    -o-transition: all 0.4s cubic-bezier(0.77,0,0.18,1);
+    transition: all 0.4s cubic-bezier(0.77,0,0.18,1);
+}

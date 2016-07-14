@@ -1,0 +1,5 @@
+.link_active,
+.link_active:hover {
+    text-decoration: none !important;
+    cursor: default;
+}

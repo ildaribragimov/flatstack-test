@@ -1,0 +1,12 @@
+.slider__slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+}
+.slider_move-direction_vert .slider__slides {
+    display: block;
+    white-space: normal;
+}

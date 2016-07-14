@@ -1,0 +1,5 @@
+.stages__stage_disable,
+.stages__stage_disable:hover {
+    text-decoration: none;
+    cursor: default;
+}

@@ -1,0 +1,6 @@
+.form__element {
+    font-weight: 300;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+}

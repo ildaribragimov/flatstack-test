@@ -80,7 +80,6 @@ $config["css"] = array(
                 "/_blocks/base/desktop/slider/__slides/slider__slides.css",
                 "/_blocks/base/desktop/slider/__slide/slider__slide.css",
                     "/_blocks/base/desktop/slider/__slide/_disable/slider__slide_disable.css",
-    
         "/_blocks/base/desktop/base_desktop_end.css",
     "/_blocks/base/base_end.css",
     
@@ -163,11 +162,14 @@ $config["js"] = array(
     "/js/helpers/ajax.js",
     "/js/helpers/function.getIndex.min.js",
     "/js/helpers/function.parent.min.js",
+    "/js/helpers/jquery.maskedinput.js",
 
     "/_blocks/base/desktop/slider/slider.js",
+    "/_blocks/base/desktop/form/form.js",
 
     "/_blocks/project/desktop/cart/cart.js",
     "/_blocks/project/desktop/order/order.js",
     "/_blocks/project/desktop/slider/slider.js",
+    "/_blocks/project/desktop/form/form.js",
 );
 ?>

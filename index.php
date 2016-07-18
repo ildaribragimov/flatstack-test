@@ -27,6 +27,7 @@
             // Вставка верхней пенели навигации
             include "includes/topPannel.php";
         ?>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <?php
             // Сборка и подключение базовых js-скриптов
             include_once "js/scripts.php";

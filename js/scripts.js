@@ -97,7 +97,13 @@ function getIndex(c,b){for(var a=0,d=b.length;a<d;a++){if(b[a]==c){return a;}}re
 /**
  * Функция "parent" ищет родителя элемента и возвращает ссылку на него
  */
-function parent(a,b){var c=a,d=document.querySelectorAll(b);while(c!=null){c=c.parentNode;var i=getIndex(c,d);if(i!==false){return d[i];}}return false;};
+function parent(a,b){var c=a,d=document.querySelectorAll(b);while(c!=null){c=c.parentNode;var i=getIndex(c,d);if(i!==false){return d[i];}}return false;};/*
+    jQuery Masked Input Plugin
+    Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
+    Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
+    Version: 1.4.1
+*/
+!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):a("object"==typeof exports?require("jquery"):jQuery)}(function(a){var b,c=navigator.userAgent,d=/iphone/i.test(c),e=/chrome/i.test(c),f=/android/i.test(c);a.mask={definitions:{9:"[0-9]",a:"[A-Za-z]","*":"[A-Za-z0-9]"},autoclear:!0,dataName:"rawMaskFn",placeholder:"_"},a.fn.extend({caret:function(a,b){var c;if(0!==this.length&&!this.is(":hidden"))return"number"==typeof a?(b="number"==typeof b?b:a,this.each(function(){this.setSelectionRange?this.setSelectionRange(a,b):this.createTextRange&&(c=this.createTextRange(),c.collapse(!0),c.moveEnd("character",b),c.moveStart("character",a),c.select())})):(this[0].setSelectionRange?(a=this[0].selectionStart,b=this[0].selectionEnd):document.selection&&document.selection.createRange&&(c=document.selection.createRange(),a=0-c.duplicate().moveStart("character",-1e5),b=a+c.text.length),{begin:a,end:b})},unmask:function(){return this.trigger("unmask")},mask:function(c,g){var h,i,j,k,l,m,n,o;if(!c&&this.length>0){h=a(this[0]);var p=h.data(a.mask.dataName);return p?p():void 0}return g=a.extend({autoclear:a.mask.autoclear,placeholder:a.mask.placeholder,completed:null},g),i=a.mask.definitions,j=[],k=n=c.length,l=null,a.each(c.split(""),function(a,b){"?"==b?(n--,k=a):i[b]?(j.push(new RegExp(i[b])),null===l&&(l=j.length-1),k>a&&(m=j.length-1)):j.push(null)}),this.trigger("unmask").each(function(){function h(){if(g.completed){for(var a=l;m>=a;a++)if(j[a]&&C[a]===p(a))return;g.completed.call(B)}}function p(a){return g.placeholder.charAt(a<g.placeholder.length?a:0)}function q(a){for(;++a<n&&!j[a];);return a}function r(a){for(;--a>=0&&!j[a];);return a}function s(a,b){var c,d;if(!(0>a)){for(c=a,d=q(b);n>c;c++)if(j[c]){if(!(n>d&&j[c].test(C[d])))break;C[c]=C[d],C[d]=p(d),d=q(d)}z(),B.caret(Math.max(l,a))}}function t(a){var b,c,d,e;for(b=a,c=p(a);n>b;b++)if(j[b]){if(d=q(b),e=C[b],C[b]=c,!(n>d&&j[d].test(e)))break;c=e}}function u(){var a=B.val(),b=B.caret();if(o&&o.length&&o.length>a.length){for(A(!0);b.begin>0&&!j[b.begin-1];)b.begin--;if(0===b.begin)for(;b.begin<l&&!j[b.begin];)b.begin++;B.caret(b.begin,b.begin)}else{for(A(!0);b.begin<n&&!j[b.begin];)b.begin++;B.caret(b.begin,b.begin)}h()}function v(){A(),B.val()!=E&&B.change()}function w(a){if(!B.prop("readonly")){var b,c,e,f=a.which||a.keyCode;o=B.val(),8===f||46===f||d&&127===f?(b=B.caret(),c=b.begin,e=b.end,e-c===0&&(c=46!==f?r(c):e=q(c-1),e=46===f?q(e):e),y(c,e),s(c,e-1),a.preventDefault()):13===f?v.call(this,a):27===f&&(B.val(E),B.caret(0,A()),a.preventDefault())}}function x(b){if(!B.prop("readonly")){var c,d,e,g=b.which||b.keyCode,i=B.caret();if(!(b.ctrlKey||b.altKey||b.metaKey||32>g)&&g&&13!==g){if(i.end-i.begin!==0&&(y(i.begin,i.end),s(i.begin,i.end-1)),c=q(i.begin-1),n>c&&(d=String.fromCharCode(g),j[c].test(d))){if(t(c),C[c]=d,z(),e=q(c),f){var k=function(){a.proxy(a.fn.caret,B,e)()};setTimeout(k,0)}else B.caret(e);i.begin<=m&&h()}b.preventDefault()}}}function y(a,b){var c;for(c=a;b>c&&n>c;c++)j[c]&&(C[c]=p(c))}function z(){B.val(C.join(""))}function A(a){var b,c,d,e=B.val(),f=-1;for(b=0,d=0;n>b;b++)if(j[b]){for(C[b]=p(b);d++<e.length;)if(c=e.charAt(d-1),j[b].test(c)){C[b]=c,f=b;break}if(d>e.length){y(b+1,n);break}}else C[b]===e.charAt(d)&&d++,k>b&&(f=b);return a?z():k>f+1?g.autoclear||C.join("")===D?(B.val()&&B.val(""),y(0,n)):z():(z(),B.val(B.val().substring(0,f+1))),k?b:l}var B=a(this),C=a.map(c.split(""),function(a,b){return"?"!=a?i[a]?p(b):a:void 0}),D=C.join(""),E=B.val();B.data(a.mask.dataName,function(){return a.map(C,function(a,b){return j[b]&&a!=p(b)?a:null}).join("")}),B.one("unmask",function(){B.off(".mask").removeData(a.mask.dataName)}).on("focus.mask",function(){if(!B.prop("readonly")){clearTimeout(b);var a;E=B.val(),a=A(),b=setTimeout(function(){B.get(0)===document.activeElement&&(z(),a==c.replace("?","").length?B.caret(0,a):B.caret(a))},10)}}).on("blur.mask",v).on("keydown.mask",w).on("keypress.mask",x).on("input.mask paste.mask",function(){B.prop("readonly")||setTimeout(function(){var a=A(!0);B.caret(a),h()},0)}),e&&f&&B.off("input.mask").on("input.mask",u),A()})}})});
 /**
  * Класс "Слайдер"
  *
@@ -298,6 +304,269 @@ function Slider(selector) {
 }
 
 /**
+ * Класс "Форма отправки e-mail"
+ *
+ * @class
+ * @classdesc Проверяет данные полей формы на допустимость значений и отправляет форму на сервер
+ *
+ * @param {object} form - Ссылка на объект формы, которую необходимо предварительно проверить перед отправкой
+ *
+ * @author Ildar Ibragimov <iibragimov84@gmail.com>
+ * @copyright Ildar Ibragimov 2016
+ */
+function formValidator(form) {
+    /**
+     * @property {collection} buttons - Коллекция только кнопок формы
+     * @property {collection} fields - Коллекция элементов (не кнопок) формы
+     */
+    var buttons = form.querySelectorAll('.form__element_button'),
+        fields = form.querySelectorAll(':not(.form__element_button) .form__field');
+    /**
+     * Метод проверяет пуста ли форма
+     *
+     * @return {boolean} false/true - "ДА" / "НЕТ"
+     * 
+     * @description Вспомогательный внутренний метод. Проверяет, если ли хотя бы одно незаполненное поле. Возвращает "ДА", если форма имеет хотя бы одно незаполненное поле; "НЕТ", Если форма заполнена полностью.
+     */
+    function isFormEmpty() {
+        // Обход коллеции объектов в массиве
+        for (var f = 0; f < fields.length; f++) {
+            // Если тип элемента формы - captcha
+            if ( ~fields[f].name.toLowerCase().indexOf('captcha') ) {
+                // Прерывание выполнения текущей итерации и переход к следующей итерации
+                continue;
+            }
+            // Если содержимое элемента формы пустое
+            if ( (fields[f].value == '' || fields[f].value == fields[f].dataset.startingValue) && fields[f].hasAttribute('required') ) {
+                // Возвращение результата "Да, форма либо пуста, либо не все элементы заполнены"
+                return true;
+            }
+        }
+        // Возвращение результата "Нет, форма заполнена полностью"
+        return false;
+    }
+    /**
+     * Метод активирует/деактивирует кнопки действий формы
+     *
+     * @param {boolean} state - Статус доступности кнопок действий формы
+     * @return void
+     *
+     * @description Вспомогательный внутренний метод. Проверяет, текущее состояние доступности кнопок формы и Активирует/Деактивирует их в зависимости от готовности формы к проверке содержимого. Устанавливает состояние "true", если кнопки доступны или false, если кнопки не доступны.
+     */
+    function enableFormActions(state) {
+        // Обход коллекции кнопок действий в цикле
+        for ( var b = 0; b < buttons.length; b++ ) {
+            // Переключаем атрибут "disabled" в завсисимости от готовности формы к проверке
+            ( state )
+                ? buttons[b].removeAttribute('disabled')
+                : buttons[b].setAttribute('disabled','')
+        }
+    }
+    /**
+     * Метод проверяет значения поля формы на допустимость и валидность
+     *
+     * @return {object} result - Объект системных сообщений о результатах проверки
+     */
+    function checkFormData() {
+        // Объявление переменных:
+        var logMsgs = [], // Массив сообщений об ошибках
+            result = {
+                type: 'success',
+                report: ['Проверка данных прошла успешно!']
+            };
+        // Обход коллеции объектов в массиве
+        for (var f = 0; f < fields.length; f++) {
+            // Объявление переменных:
+            var tagName = fields[f].tagName.toLowerCase(), // Название тега элемента формы
+                name = fields[f].name, // Значение атрибута "name" элемента формы
+                type = fields[f].type, // Значение атрибута "type" элемента формы
+                value = fields[f].value.trim(); // Содержимое элемента формы
+            // Если тип элемента формы - captcha
+            if ( ~name.toLowerCase().indexOf('captcha') ) {
+                // Если содержимое элемента формы не пустое
+                if ( value != '' ) {
+                    // Формирование сообщения об ошибке
+                    logMsgs[f] = 'Ошибка идентификации!';
+                    // Прерывание выполнения цикла, выход из цикла
+                    break;
+                }
+                // Прерывание выполнения текущей итерации и переход к следующей итерации
+                continue;
+            }
+            // Если содержимое элемента формы пустое
+            if ( value == '' ) {
+                // Формирование сообщения об ошибке
+                logMsgs[f] = 'Поле не должно быть пустым!';
+                // Прерывание выполнения текущей итерации и переход к следующей итерации
+                continue;
+            }
+            // Проверка (по значнию атрибута "name") содержимого элемента формы на соответствие присвоенному типу поля
+            switch ( name ) {
+                case 'name':
+                    // Формирование регулярного выражения (только буквы русского и латинского алфавита и пробелы) для поиска совпадений
+                    var regExp = /(^[а-яА-ЯёЁa-zA-Z\s]*$)/i;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Имя должно состоять только из букв русского или латинского алфавита!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'cardholderName':
+                    // Формирование регулярного выражения (только заглавные буквы латинского алфавита и пробелы) для поиска совпадений
+                    var regExp = /(^[A-Z\s]*$)/i;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Имя владельца карты должно быть введено в точности как указано на карте!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'email':
+                    // Формирование регулярного выражения (только буквы латинского алфавита, цифры, знаки "-", "_", "@") для поиска совпадений
+                    var regExp = /(^([a-z0-9]+[-._]{0,1})+@([a-z0-9]+[-._]{0,1})+\.+[a-z]{2,8}$)/i;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'E-mail указан не верно!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'phone':
+                    // Формирование регулярного выражения (только цифры, пробелы, знаки "(", ")", "-", "+") для поиска совпадений
+                    var regExp = /(\+?[7,8][\s\-{1}]?[\({1}]?\d{3,6}[\){1}]?[\s\-{1}]?\d{1,3}[\s\-{1}]?\d{2}[\s\-{1}]?\d{2}\b)/;
+                    // Если совпадения найдены ИЛИ длина значения поля меньше 6 символов
+                    if ( regExp.exec(value) == null ) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Номер телефона указан не верно!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'zip':
+                case 'securityCode':
+                    // Формирование регулярного выражения (только целые числа) для поиска совпадений
+                    var regExp = /(^[0-9]*$)/;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null) {
+                        // Формирование сообщения об ошибке
+                        if (name = "zip") logMsgs[f] = 'Индекс должен состоять только из цифр!';
+                        if (name = "securityCode") logMsgs[f] = 'Код безопасности должен состоять только из цифр!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'cardNumber':
+                    // Формирование регулярного выражения (только целые числа и пробелы) для поиска совпадений
+                    var regExp = /(^[0-9\s]*$)/;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Номер карты должен состоять только из цифр!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'expireDate':
+                    // Формирование регулярного выражения (только целые числа, пробелы и символ "/") для поиска совпадений
+                    var regExp = /(\d{2}[\s{1}]?[\/{1}][\s{1}]?\d{2})/,
+                        arr = value.split(" / "),
+                        today = new Date(),
+                        year = today.getFullYear().toString();
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) == null || arr[0] > 12 || arr[1] < year.substr(year.length - 2)) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Формат срока действия карты введен не корректно!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                case 'message':
+                    // Формирование регулярного выражения (любые символы кроме руссих букв и пробела) для поиска совпадений
+                    var regExp = /([\<\>]|script|style)/i;
+                    // Если совпадения найдены
+                    if ( regExp.exec(value) !== null) {
+                        // Формирование сообщения об ошибке
+                        logMsgs[f] = 'Вводите только текст! HTML-теги недопустимы!';
+                    }
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+                default:
+                    // Прерывание выполнения конструкции "switch"
+                    break;
+            }
+        }
+        // Если массив сообщений об ошибках не пустой
+        if ( logMsgs.length > 0 ) {
+            result.type = 'fail';
+            result.report = logMsgs;
+        }
+        // Возвращение результата проверки
+        return result;
+    }
+
+    // Вызов метода деактивации кнопок действий формы, если содержимое хотя бы одного элемента формы пустое
+    enableFormActions( !isFormEmpty() );
+
+    // Назначение обработчика события отправки формы на сервер
+    form.addEventListener("submit", function(event) {
+        var checkResult = checkFormData();
+        // Если проверка данных формы вернула ошибку в данных
+        if ( checkResult.type == 'fail' ) {
+            console.log(checkResult.report);
+            //alert ('Данные формы НЕ корректны!');
+            // Отмена действия по умолчанию браузера на событие
+            event.preventDefault();
+        } else {
+            // Здесь вызываем методы, формирующие дополнитеьльные данные для проверки пользователя по тестам Тьюринга на сервере
+        }
+    });
+
+    // Назначение обработчиков событий изменения содержимого элементов формы
+    for (var f = 0; f < fields.length; f++) {
+        // Если тип элемента формы - captcha
+        if ( ~fields[f].name.toLowerCase().indexOf('captcha') ) {
+            // Прерывание выполнения текущей итерации и переход к следующей итерации
+            continue;
+        }
+        // Назначение обработчика событий "onkeyup", "oninput", "onchange" 
+        fields[f].onkeyup = fields[f].oninput = fields[f].onchange = function () {
+            // Вызов метода проверки заполненности всех полей формы с последующей активацией/деактивацией кнопок действий формы
+            enableFormActions( !isFormEmpty() );
+        };
+        // Назначение обработчика событий "onchange" для IE 8-
+        fields[f].onpropertychange = function() {
+            // Если имя изменённого свойства (атрибута) - "value"
+            if (event.propertyName == "value") {
+                // Вызов метода проверки заполненности всех полей формы с последующей активацией/деактивацией кнопок действий формы
+                enableFormActions( !isFormEmpty() );
+            }
+        };
+        // Назначние обработчика события "oncut"
+        fields[f].oncut = function() {
+            // Вызов метода проверки заполненности всех полей формы с последующей активацией/деактивацией кнопок действий формы
+            setTimeout( enableFormActions( !isFormEmpty() ), 0); // на момент oncut значение еще старое
+        };
+        // Назначение обработчика событий "onfocus", "onblur"
+        fields[f].onfocus = fields[f].onblur = function(event) {
+            var field = event.target;
+            if (field.dataset.startingValue) {
+                switch (event.type) {
+                    case 'focus':
+                        if (field.value == '') {
+                            field.value = field.dataset.startingValue;
+                        }
+                        // Прерывание выполнения конструкции "switch"
+                        break;
+                    case 'blur':
+                        if (field.value == field.dataset.startingValue) {
+                            field.value = '';
+                        }
+                        // Прерывание выполнения конструкции "switch"
+                        break;
+                }
+            }
+        };
+    }
+}
+
+/**
  * Объявление глобальных переменных
  *
  * @property {object} xhr - Экземпляр объекта "ajax"
@@ -411,4 +680,21 @@ document.addEventListener("xhrDataObtained", function(event) {
  * @property {object} slider_forms - Экземпляр объекта "Слайдер форм"
  */
 var slider_forms = new Slider(document.querySelector(".slider_forms"));
+
+/**
+ * @property {object} sendMailForm - Экзепляр объекта "Accordion"
+ * @public
+ */
+var form_shipping = new formValidator(document.querySelector('.form_shipping')),
+    form_billing = new formValidator(document.querySelector('.form_billing')),
+    form_payment = new formValidator(document.querySelector('.form_payment'));
+
+$(function(){
+    // Применение маски ввода для поля "Daytime Phone"
+    $('.form__field[name="daytimePhone"]').mask("+7 (999) 999-99-99");
+    // Применение маски ввода для поля "Card Number"
+    $('.form__field[name="cardNumber"]').mask("9999 9999 9999 9999 9999");
+    // Применение маски ввода для поля "Expire Date"
+    $('.form__field[name="expireDate"]').mask("99 / 99");
+});
 });

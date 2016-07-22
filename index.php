@@ -9,6 +9,7 @@
             // Сборка и подключение базовых CSS-стилей
             include_once "css/system/styles.php";
         ?>
+        <!--<link rel="stylesheet" href="css/customSelect.css" />-->
     </head>
     <body class="page">
         <div class="page__wrapper">

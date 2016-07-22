@@ -22,7 +22,7 @@
                                         </div><div class="form__element form__element_input form__element_phone">
                                             <input name="daytimePhone" type="tel" placeholder="Daytime Phone" data-starting-value="" required="required" value="" class="form__field block_w-50per">
                                             <div class="form__label">For delivery <br>questions only</div>
-                                        </div>
+                                        </div>                                        
                                     </fieldset>
                                     <fieldset class="form__element-group">
                                         <legend class="form__element-group-label h h_lev_6">Address</legend>
@@ -32,8 +32,41 @@
                                             <input name="apartment" type="text" placeholder="Apt, Suite, Bldg, Gate Code. (optional)" data-starting-value="" required="required" value="" class="form__field">
                                         </div><div class="form__element form__element_input form__element_city">
                                             <input name="сity" type="text" placeholder="City" data-starting-value=""   required="required" value="" class="form__field">
-                                        </div><div class="form__element form__element_input form__element_country block_w-60per">
-                                            <input name="country" type="text" placeholder="Country" data-starting-value=""   required="required" value="" class="form__field">
+                                        </div><div class="form__element form__element_select form__element_country block_w-60per">
+                                            <select class="select_live" name="country" required="required">
+                                                <option value="placeholder" selected="selected">Country</option>
+                                                <option value="Romania">Romania</option>
+                                                <option value="Russia">Russia</option>
+                                                <option value="Rwanda">Rwanda</option>
+                                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                                <option value="Saint Lucia">Saint Lucia</option>
+                                                <option value="Saint Vincent & the Grenadines">Saint Vincent & the Grenadines</option>
+                                                <option value="Samoa">Samoa</option>
+                                                <option value="San Marino">San Marino</option>
+                                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                                <option value="Senegal">Senegal</option>
+                                                <option value="Serbia">Serbia</option>
+                                                <option value="Seychelles">Seychelles</option>
+                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Sint Maarten">Sint Maarten</option>
+                                                <option value="Slovakia">Slovakia</option>
+                                                <option value="Slovenia">Slovenia</option>
+                                                <option value="Solomon Islands">Solomon Islands</option>
+                                                <option value="Somalia">Somalia</option>
+                                                <option value="South Africa">South Africa</option>
+                                                <option value="South Korea">South Korea</option>
+                                                <option value="South Sudan">South Sudan</option>
+                                                <option value="Spain">Spain</option>
+                                                <option value="Sri Lanka">Sri Lanka</option>
+                                                <option value="Sudan">Sudan</option>
+                                                <option value="Suriname">Suriname</option>
+                                                <option value="Swaziland">Swaziland</option>
+                                                <option value="Sweden">Sweden</option>
+                                                <option value="Switzerland">Switzerland</option>
+                                                <option value="Syria">Syria</option>
+                                            </select>
                                         </div><div class="form__element form__element_input form__element_zip block_w-40per">
                                             <input name="zip" type="text" placeholder="Zip" data-starting-value=""   required="required" value="" class="form__field">
                                         </div>
@@ -70,8 +103,41 @@
                                         </div>
                                         <div class="form__element form__element_input form__element_city">
                                             <input name="сity" type="text" placeholder="City" data-starting-value=""   required="required" value="" class="form__field">
-                                        </div><div class="form__element form__element_input form__element_country block_w-60per">
-                                            <input name="country" type="text" placeholder="Country" data-starting-value=""   required="required" value="" class="form__field">
+                                        </div><div class="form__element form__element_select form__element_country block_w-60per">
+                                            <select class="select_live" name="country" required="required">
+                                                <option value="placeholder" selected="selected">Country</option>
+                                                <option value="Romania">Romania</option>
+                                                <option value="Russia">Russia</option>
+                                                <option value="Rwanda">Rwanda</option>
+                                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                                <option value="Saint Lucia">Saint Lucia</option>
+                                                <option value="Saint Vincent & the Grenadines">Saint Vincent & the Grenadines</option>
+                                                <option value="Samoa">Samoa</option>
+                                                <option value="San Marino">San Marino</option>
+                                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                                <option value="Senegal">Senegal</option>
+                                                <option value="Serbia">Serbia</option>
+                                                <option value="Seychelles">Seychelles</option>
+                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Sint Maarten">Sint Maarten</option>
+                                                <option value="Slovakia">Slovakia</option>
+                                                <option value="Slovenia">Slovenia</option>
+                                                <option value="Solomon Islands">Solomon Islands</option>
+                                                <option value="Somalia">Somalia</option>
+                                                <option value="South Africa">South Africa</option>
+                                                <option value="South Korea">South Korea</option>
+                                                <option value="South Sudan">South Sudan</option>
+                                                <option value="Spain">Spain</option>
+                                                <option value="Sri Lanka">Sri Lanka</option>
+                                                <option value="Sudan">Sudan</option>
+                                                <option value="Suriname">Suriname</option>
+                                                <option value="Swaziland">Swaziland</option>
+                                                <option value="Sweden">Sweden</option>
+                                                <option value="Switzerland">Switzerland</option>
+                                                <option value="Syria">Syria</option>
+                                            </select>
                                         </div><div class="form__element form__element_input form__element_zip block_w-40per">
                                             <input name="zip" type="text" placeholder="Zip" data-starting-value=""   required="required" value="" class="form__field">
                                         </div>

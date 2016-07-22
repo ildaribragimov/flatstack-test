@@ -1,0 +1,7 @@
+.select__option {
+    padding: 0.22em 1em;
+    cursor: pointer;
+}
+.select__option:hover {
+    background-color: #e6e9f0;
+}

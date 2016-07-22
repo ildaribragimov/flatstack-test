@@ -1,0 +1,8 @@
+.select__icon_search {
+    top: 0.75em;
+    left: 1em;
+}
+.select__icon_search:before {
+    content: '\e036';
+    display: block;
+}

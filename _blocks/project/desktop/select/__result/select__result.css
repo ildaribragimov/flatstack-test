@@ -1,11 +1,10 @@
-.form__field {
+.select__result {
     position: relative;
     border-radius: 5px;
     background-color: #ffffff;
     border: solid 1px #dedcdc;
-    padding: 0.625em 1em;
+    padding: 0.625em 2.5em 0.625em 1em;
     max-width: 26.625em;
-    width: calc(100% - 2em - 2px - 0.625em);
+    width: calc(100% - 3.5em - 2px);
     vertical-align: middle;
-    margin: 0.3125em;
 }

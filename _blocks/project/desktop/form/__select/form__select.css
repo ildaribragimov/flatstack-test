@@ -1,0 +1,7 @@
+.form__select {
+    position: relative;
+    max-width: 26.625em;
+    width: calc(100% - 0.625em);
+    vertical-align: middle;
+    margin: 0.3125em;
+}

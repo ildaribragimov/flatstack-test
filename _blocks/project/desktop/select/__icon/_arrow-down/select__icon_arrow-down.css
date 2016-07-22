@@ -1,0 +1,26 @@
+.select__icon_arrow-down {
+    cursor: pointer;
+    top: 0.75em;
+    right: 0.75em;
+}
+.select__icon_arrow-down:before,
+.select__icon_arrow-down:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.625em;
+    height: 2px;
+    top: 0.25em;
+    background-color: #a9a9a9;
+    border-radius: 1px;
+}
+.select__icon_arrow-down:before {
+    left: 1px;
+    transform-origin: 0% 100%;
+    transform: rotate(45deg);
+}
+.select__icon_arrow-down:after {
+    right: 1px;
+    transform-origin: 100% 100%;
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,5 @@
+.select__list {
+    max-height: 15em;
+    overflow-x: hidden;
+    padding-top: 0.5em;
+}

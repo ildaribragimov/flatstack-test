@@ -22,7 +22,7 @@
                                         </div><div class="form__element form__element_input form__element_phone">
                                             <input name="daytimePhone" type="tel" placeholder="Daytime Phone" data-starting-value="" required="required" value="" class="form__field block_w-50per">
                                             <div class="form__label">For delivery <br>questions only</div>
-                                        </div>                                        
+                                        </div>                                       
                                     </fieldset>
                                     <fieldset class="form__element-group">
                                         <legend class="form__element-group-label h h_lev_6">Address</legend>
@@ -33,7 +33,7 @@
                                         </div><div class="form__element form__element_input form__element_city">
                                             <input name="сity" type="text" placeholder="City" data-starting-value=""   required="required" value="" class="form__field">
                                         </div><div class="form__element form__element_select form__element_country block_w-60per">
-                                            <select class="select_live" name="country" required="required">
+                                            <select class="select select_live" name="country" required="required">
                                                 <option value="placeholder" selected="selected">Country</option>
                                                 <option value="Romania">Romania</option>
                                                 <option value="Russia">Russia</option>

@@ -5,3 +5,6 @@
 .select__option:hover {
     background-color: #e6e9f0;
 }
+.select__list_filtered .select__option {
+    display: none;
+}

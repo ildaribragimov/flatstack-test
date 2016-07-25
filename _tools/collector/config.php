@@ -177,7 +177,6 @@ $config["js"] = array(
     "/js/helpers/ajax.js",
     "/js/helpers/function.getIndex.min.js",
     "/js/helpers/function.parent.min.js",
-    //"/js/helpers/customSelect.min.js",
     "/js/helpers/jquery.maskedinput.js",
 
     "/_blocks/base/desktop/slider/slider.js",

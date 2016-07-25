@@ -907,11 +907,14 @@ body {
 .select__option:hover {
     background-color: #e6e9f0;
 }
+.select__list_filtered .select__option {
+    display: none;
+}
 .select__option_selected {
     background-color: #e6e9f0;
 }
 .select__option_search-result {
-    background-color: rgba(230, 233, 240, 0.4);
+    display: block !important;
 }
 .select__search {
     position: relative;
